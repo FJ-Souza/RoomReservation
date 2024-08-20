@@ -47,7 +47,26 @@
                       </div>
                   </div>
                   {% endfor %}
-                  <div class="pagination">
+                  <nav aria-label="...">
+                      <ul class="pagination">
+                        {% if reservas.has_previous %}
+                          <li class="page-item disabled">
+                              <a class="page-link" href="?page={{reservas.previous_page_number}}">Anterior</a>
+                          </li>
+                        {% endif %}
+                          <li class="page-item"><a class="page-link" href="?page=1">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="?page={{reservas.number}}">{{ reservas.number }}</a>
+                        </li>
+                        {% if reservas.has_next %}
+                          <li class="page-item"><a class="page-link" href="?page=3">3</a></li>
+                          <li class="page-item">
+                                <a class="page-link" href="?page={{ reservas.next_page_number }}">Next</a>
+                          </li>
+                        {% endif %}
+                      </ul>
+                  </nav>
+                  <!-- <div class="pagination">
                     <span class="step-links">
                         {% if reservas.has_previous %}
                             <a href="?page=1">&laquo; primeira</a>
@@ -63,7 +82,7 @@
                             <a href="?page={{ reservas.paginator.num_pages }}">última &raquo;</a>
                         {% endif %}
                     </span>
-                </div>
+                </div> -->
               </div>   
       </div>
   </section>

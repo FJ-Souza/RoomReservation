@@ -7,7 +7,7 @@
             "username": "Docente" ,
             "password": "pbkdf2_sha256$870000$opKrGAcEpVHoSrYXgvdnXX$ts0EnpiBC29/fwg2ImlQzVA/pqX3i/zxgK19iM5zUX0=",
             "user_type": "teacher",
-            "email": "docentesenai1234@gmail.com"
+            "email": "docentesenai@gmail.com"
         }
     },
     {
@@ -18,7 +18,7 @@
             "username": "Gestor" ,
             "password": "pbkdf2_sha256$870000$GpZb8wbk2Ky3rHdo0hEPa9$vX33B3iwbRBA/Q7BATAE+gpLe3wPYTnQXuQiQ/6v/xU=",
             "user_type": "manager",
-            "email": "gestorsenai1234@gmail.com"
+            "email": "gestorsenai@gmail.com"
         }
     }
 ]
